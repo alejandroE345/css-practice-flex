@@ -15,9 +15,9 @@ body {
    =========================================== */
 
 .navbar {
-    /* TODO: Add display: flex to make this a flex container */
-    /* TODO: Add justify-content: space-between to space logo and links apart */
-    /* TODO: Add align-items: center to center items vertically */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 1rem 2rem;
     background-color: #333;
 }
@@ -29,9 +29,11 @@ body {
 }
 
 .nav-links {
-    /* TODO: Add display: flex to make this a flex container */
-    /* TODO: Add gap property (try 2rem) for spacing between links */
+    display: flex;
+    gap: 2rem;
     list-style: none;
+   
+   
 }
 
 .nav-links a {
@@ -39,11 +41,12 @@ body {
     text-decoration: none;
     padding: 0.5rem 1rem;
     border-radius: 4px;
-    /* TODO: Add transition property for smooth hover effects */
+    transition: 1s ease-out;
 }
 
 .nav-links a:hover {
-    /* TODO: Add background-color for hover state */
+transition: all 200ms ease-in-out;
+background-color: rgb(106, 106, 106);
 }
 
 /* ===========================================
@@ -51,9 +54,9 @@ body {
    =========================================== */
 
 .hero {
-    /* TODO: Add display: flex to make this a flex container */
-    /* TODO: Add justify-content: center to center horizontally */
-    /* TODO: Add align-items: center to center vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 400px;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
@@ -78,9 +81,10 @@ body {
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
-    /* TODO: Add transition property for smooth hover effects */
+    transition: ease-in 400ms;
+    
 }
 
 .cta-button:hover {
-    /* TODO: Add background-color for hover state (try #ff5252) */
+   background-color: #ff5252;
 }
